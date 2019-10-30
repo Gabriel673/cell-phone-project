@@ -54,6 +54,7 @@ void draw() {
   fill(blue); 
   noStroke(); //outline of measles
   ellipse(random(width*0.6/8, width*1/8), random(height*10/40, height*31/40),measleDiameter, measleDiameter);
+  ellipse(random(width*1/8, width*2/8), random(height*3/40, height*37/40),measleDiameter, measleDiameter);
   ellipse(random(width*2/8, width*3/8), random(height*3/40, height*37/40),measleDiameter, measleDiameter);
   ellipse(random(width*3/8, width*5/8), random(height*1/40, height*39/40),measleDiameter, measleDiameter);
   ellipse(random(width*5/8, width*6/8), random(height*3/40, height*37/40),measleDiameter, measleDiameter);
@@ -75,5 +76,5 @@ void draw() {
 void mousePressed(){
    if (mouseX >= width*19/20 && mouseX <= width && mouseY >= height*0 && mouseY <= height);
      exit();
-   }
+   
 }
