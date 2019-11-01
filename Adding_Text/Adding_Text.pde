@@ -19,13 +19,6 @@ int measleDiameter;
 void setup() {
   size(500,500);
   //fullscreen();
-  
-  //Font Setup
-  //String[] fontList = PFont.list(); //To list all fonts available on system
-  println("start of console");
-  //printArray(fontList); //For listing all possible fonts to choose, then createFont
-  
-  quitButtonSetup();
 
    leftEyeX = width*1/4;
    leftEyeY = height*1/4;
@@ -53,7 +46,7 @@ void setup() {
 
   //Optional: ears, fill();
   
-  rect(width*19/20, height*0, width*1/20, height*1/20); //Quit Button
+  rect(width*19/20, height*0, width*1/20, height*1/20);
 }
 
 void draw() {
@@ -82,5 +75,6 @@ void draw() {
 //Listener
 void mousePressed(){
    if (mouseX >= width*19/20 && mouseX <= width && mouseY >= height*0 && mouseY <= height);
-     exit();  
+     exit();
+   
 }
